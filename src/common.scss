@@ -1,0 +1,40 @@
+@import './constants.scss';
+html,
+body,
+#course-academy {
+    height: 100%;
+    width: 100%;
+}
+
+.inline-green {
+    color: $baseGreen;
+    font-weight: bold;
+}
+
+.inline-gray {
+    color: #cccccc;
+}
+
+.inline-dark-gray {
+    color: gray;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.row {
+    // margin: 0 !important;
+}
+
+.recharts-cartesian-axis-tick-line {
+    display: none;
+}

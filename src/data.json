@@ -1,0 +1,48 @@
+{
+    "taskData": [
+        {
+            "title": "Full Stack Web Development",
+            "taskName": "Complete the introduction to programming course",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": true
+        },
+        {
+            "title": "JavaScript",
+            "taskName": "Take the practice coding quiz",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": true
+        },
+        {
+            "title": "C/C++ Programming",
+            "taskName": "Inspect the Introduction to programming course",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": true
+        },
+        {
+            "title": "Full Stack Web Development",
+            "taskName": "Complete the introduction to programming course",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": false
+        },
+        {
+            "title": "Javascript",
+            "taskName": "Write hello world program",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": false
+        },
+        {
+            "title": "Full Stack Web Development",
+            "taskName": "Write hello world program",
+            "taskDate": "5 Aug 2018",
+            "taskDesc": "Prepare for the quiz by taking our intro to programming course. Already have programming experience? Go ahead and start the quiz.",
+            "isActive": true,
+            "isCompleted": false
+        },
+        {
+            "title": "Full Stack Web Development",
+            "taskName": "Change the Color of shapes program",
+            "taskDate": "5 Aug 2018",
+            "isCompleted": false
+        }
+    ]
+}
