@@ -11,7 +11,7 @@ export const HomePage = asyncComponent(() => import('./components/HomePage'), 'H
 ReactDOM.render(
   <HashRouter>
     <Switch>
-      <Route exact path="/" component={App} />
+      <Route exact path="/" component={HomePage} />
     </Switch>
   </HashRouter>,
   document.getElementById('course-academy') as HTMLElement
