@@ -1,0 +1,357 @@
+@import '../../constants.scss';
+.home-page-container {
+    width: 89%;
+    margin: auto;
+    padding: 30px;
+    .left-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .right-container {
+        width: 33%;
+        margin: 0 auto;
+    }
+    .jumbotron {
+        padding: 30px;
+        background-color: #E8F3EC;
+        h1 {
+            font-family: 'Monotype Corsive'
+        }
+        .default {
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            color: black;
+            margin-right: 10px;
+            .fa {
+                margin-right: 10px;
+            }
+        }
+        .primary {
+            background-color: $baseGreen;
+            border: 1px solid lightgrey;
+            color: white;
+            margin-left: 10px;
+        }
+        .bottom {
+            .pull-right {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                .fa {
+                    padding: 8px;
+                    color: $baseGreen;
+                }
+            }
+        }
+    }
+    .progress {
+        height: 7px;
+        margin: 10px 0px;
+        .progress-bar {
+            border-radius: 50px;
+            background-color: $baseGreen;
+        }
+    }
+    .mover {
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+        i {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 25px;
+    }
+    .day {
+        padding: 17px 0px;
+        font-size: 20px;
+    }
+    @mixin dotStyle($color, $margin) {
+        width: 6px;
+        margin: $margin;
+        height: 6px;
+        background-color: $color;
+        border-radius: 100%;
+    }
+    .quiz-sidebar-container {
+        .week-container {
+            display: flex;
+            justify-content: space-between;
+            .week {
+                text-align: center;
+                .name {
+                    padding: 5px 0px;
+                }
+                .circle {
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    background-color: $baseGreen;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+                .number {
+                    padding: 5px 0px;
+                }
+                .green-dot {
+                    @include dotStyle($baseGreen, auto);
+                }
+                .orange-dot {
+                    margin-top: 10px;
+                    @include dotStyle( #F0963D, 10px auto);
+                }
+            }
+        }
+    }
+    .quizes {
+        // height: 178px;
+        max-height: 178px;
+        padding: 15px;
+        overflow: hidden;
+        .col-sm-12 {
+            display: flex;
+            padding: 0;
+            margin: 10px 0px;
+            align-items: center;
+            .col-sm-9 {
+                padding: 0;
+                .task-name {
+                    font-size: 14px;
+                }
+                .task-date {
+                    font-size: 11px;
+                    color: lightgray;
+                }
+            }
+            .completed {
+                color: $baseGreen;
+                padding: 0;
+                text-align: right;
+            }
+            .incomplete {
+                text-align: right;
+                color: lightgray;
+                padding: 0;
+            }
+        }
+    }
+    .quizes-expanded.quizes {
+        max-height: 100%;
+    }
+    .resizer {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        color: $baseGreen;
+    }
+    .tabs {
+        li {
+            padding: 8px 0px;
+        }
+        a {
+            padding: 10px 0px;
+            margin: 0 10px;
+            color: gray;
+        }
+        .active {
+            a {
+                color: $baseGreen;
+                border-bottom: 2px solid $baseGreen;
+            }
+        }
+    }
+    .tab-content {
+        .points {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #dadee1;
+            .point {
+                display: inline-flex;
+                padding: 3px 8px;
+                color: green;
+                font-weight: bold;
+                background-color: #E8F5F1;
+                border: 1px solid #aadcaa;
+                border-radius: 3px;
+            }
+        }
+        .active {
+            opacity: 1;
+            height: 300px;
+            margin-left: -58px;
+            padding: 16px;
+        }
+        .dropdown {
+            margin: 0 10px;
+            border: 2px solid #e6e6e6;
+            border-radius: 6px;
+        }
+    }
+    .contact-us-container {
+        .title {
+            font-weight: bold;
+            color: gray;
+            padding: 14px 0px;
+            padding-top: 0px;
+        }
+        .data {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            .data-title {
+                font-weight: bold;
+                color: gray;
+                font-size: 15px;
+                padding: 7px 0px;
+            }
+            .text {
+                color: gray;
+                font-size: 14px;
+            }
+            .btn {
+                border: 1px solid lightgrey;
+                font-size: 15px;
+                padding: 6px 16px
+            }
+        }
+    }
+    .task-intro-container {
+        margin: 50px 0px;
+        ul.breadcrumb {
+            padding: 0;
+            list-style: none;
+            background-color: transparent;
+        }
+        ul.breadcrumb li {
+            display: inline;
+            font-size: 14px;
+        }
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+        ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+        .inactive {
+            color: gray;
+        }
+        .task-title {
+            font-size: 26px;
+        }
+        .task-container {
+            padding: 16px 0px;
+            display: flex;
+            justify-content: space-between;
+            .header {
+                color: #c5c5c5;
+                font-size: 13px;
+            }
+            .value {
+                font-size: 14px;
+            }
+            .red {
+                color: red;
+            }
+        }
+    }
+    @mixin hoverState {
+        cursor: pointer;
+        box-shadow: rgba(214, 214, 214, 0.9) 0px 18px 44px, inset 0px 0px 0px 1px $baseGreen !important;
+        padding: 20px;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+    .upcoming-task-container {
+        .task-card-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0px;
+            &:hover {
+                @include hoverState();
+            }
+        }
+        .inline-dark-gray {
+            padding-bottom: 10px;
+        }
+        .primary {
+            background-color: $baseGreen;
+            border: 1px solid lightgrey;
+            color: white;
+            margin-left: 10px;
+        }
+        .default {
+            margin-left: 14px;
+            border: 1px solid gray;
+        }
+    }
+    .completed-task-container {
+        .inline-dark-gray {
+            margin-bottom: 10px;
+        }
+        .task-card-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0px;
+            &:hover {
+                @include hoverState();
+            }
+        }
+        .primary {
+            padding: 10px 23px;
+            background-color: #E8F5F1;
+            color: $baseGreen;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and( max-width:768px) {
+    .home-page-container {
+        padding: 5px;
+        width: 100%;
+        padding: 20px;
+        .left-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .right-container {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        .default {
+            margin: 10px;
+        }
+    }
+    .task-container {
+        flex-direction: column;
+        .task-data {
+            padding: 10px 0;
+        }
+    }
+}
